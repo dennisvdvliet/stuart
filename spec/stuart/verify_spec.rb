@@ -13,15 +13,16 @@ describe Stuart::Verify do
     path: '/foo',
     method: 'POST'})}
 
-  let(:public_key) {'-----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArEzC0MAU1MrmYjwwscW2
-HbQgegnEbe6CZEroQ7nFMmOARdeiw7X9QOENQDe5pvK1o7tdYAvNpg5BRWTq90v+
-UShZ4kqni1YaNXEZgeN7alR2m/KRP4lBRpVnBV11cVd7/lmLP3ux23AksDubh/Sj
-CXkikx78pnof3itCLQqDAxBLCYPo3a4i54lniwDjeJS91Fto4c4ERr7CFD5EQih3
-mC5z6zwPYpe53ZZTbFRMf1IG7QdhfiMoZQ7YAgMLZj8i9oJHuB4rV5zCNtJ7LNni
-2hS20bGymsW93lhE1jtBx7RdTD1NCUGDOt3jOAjFEL2wGjNYiHictWdvpWR2v8Ym
-owIDAQAB
------END PUBLIC KEY-----'}
+  let(:public_key) {
+    ' -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArEzC0MAU1MrmYjwwscW2
+      HbQgegnEbe6CZEroQ7nFMmOARdeiw7X9QOENQDe5pvK1o7tdYAvNpg5BRWTq90v+
+      UShZ4kqni1YaNXEZgeN7alR2m/KRP4lBRpVnBV11cVd7/lmLP3ux23AksDubh/Sj
+      CXkikx78pnof3itCLQqDAxBLCYPo3a4i54lniwDjeJS91Fto4c4ERr7CFD5EQih3
+      mC5z6zwPYpe53ZZTbFRMf1IG7QdhfiMoZQ7YAgMLZj8i9oJHuB4rV5zCNtJ7LNni
+      2hS20bGymsW93lhE1jtBx7RdTD1NCUGDOt3jOAjFEL2wGjNYiHictWdvpWR2v8Ym
+      owIDAQAB
+      -----END PUBLIC KEY-----'}
 
   describe "#verify" do
     it "returns true" do
