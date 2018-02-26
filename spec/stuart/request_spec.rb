@@ -39,7 +39,7 @@ describe Stuart::Request do
 
   describe "#cleaned_authorization_header" do
     it "returns yolo" do
-      expect(described_class.new(invalid_signed_request).send(:cleaned_signature)).to eq('yolo')
+      expect(described_class.new(invalid_signed_request).send(:cleaned_authorization_header)).to eq('yolo')
     end
   end
 
