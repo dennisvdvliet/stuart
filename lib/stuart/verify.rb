@@ -8,7 +8,6 @@ module Stuart
     end
 
     def verify
-      puts public_key.to_text
       public_key.verify(digest, Base64.decode64(request.signature), request.payload)
     end
 
